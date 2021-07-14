@@ -1,0 +1,344 @@
+/*Reset*/
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+   padding: 0 100px;
+}
+
+body {
+    height: 1500px;
+    min-width: 650px;
+    max-width: 1500px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    /*border: 5px solid teal;*/
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: blueviolet;
+}
+
+/*----------------------------------HEADER----------------------------*/
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width:100%;
+    height:8%;
+    order:1;
+    /*border: 3px solid chocolate;*/
+    background-color: white;
+}
+.logoImage{
+    width:250px;
+    background-color: white;
+    background-image: url("img/PersonalLogo450px.svg");
+    background-repeat: no-repeat;
+    background-position:35px 5px;
+    background-size: contain;
+    margin:15px 20px;
+    /*border: 3px solid chocolate*/
+}
+.siteTitle{
+    width:300px;
+    /*height: 100%;*/
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    text-align: right;
+    margin:auto 10px auto 0;
+}
+/*--------------------------------End of HEADER----------------------------*/
+/*-----------------------------Main Navigation Menu----------------------------*/
+nav{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: right;
+    width:100%;
+    height: 3.5%;
+    order:2;
+    margin-bottom:5px;
+}
+
+nav>a>div{
+    width:100px;
+    height: 100%;
+    margin:0 5px;
+    padding: 15px 0;
+    border-radius: 20px 5px;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    font-size: larger ;
+}
+/*----------------Hover Shadow and Active Menu------------------------*/
+nav>a>div.changeByHover:hover{
+    background-color: steelblue;
+    font-size: x-large;
+    padding: 12px 0;
+}
+
+nav>div#homeShadow>p{
+    color: teal;
+    font-weight: bold;
+    font-size: x-large;
+}
+div#homeShadow{
+    box-shadow:inset  -8px 8px teal;
+    background-color: white;
+    filter:drop-shadow(-2px 2px 2px grey);
+    width:100px;
+    height: 100%;
+    margin:0 5px;
+    padding: 15px 0;
+    border-radius: 20px 5px;
+    text-align: center;
+    font-size: larger ;
+}
+/*--------------------------End of Main Navigation Menu----------------------------*/
+/*-----------------------------Main Part----------------------------*/
+main{
+    display: flex;
+    width:58%;
+    height: 70%;
+    flex-flow: row wrap;
+    margin: 0 auto 5px;
+    order:4;
+    /*border: 3px solid chocolate;*/
+    /*background-color: beige;*/
+}
+    .mainSec{
+        display: flex;
+        flex-flow: row wrap;
+        width:100%;
+
+    }
+    .mainSecPic{
+        width:90%;
+        margin: 0 auto;
+    }
+    .mainSecPic>img{
+        width: 100%;
+
+    }
+    .mainSecText{
+        width:90%;
+        margin: 10px auto;
+    }
+
+                        .subSecRight{
+                            display: flex;
+                            flex-flow: row wrap;
+                            width:50%;
+                        }
+                        .subSecRightPic{
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+                        .subSecRightPic>img{
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                        .subSecRightText{
+                            width:90%;
+                            margin: 0 auto;
+
+                        }
+.subSecLeft{
+    display: flex;
+    flex-flow: row wrap;
+    width:50%;
+}
+.subSecLeftPic{
+    width: 90%;
+    margin: 0 auto;
+}
+.subSecLeftPic>img{
+    width: 100%;
+    margin: 0 auto;
+}
+.subSecLeftText{
+    width:90%;
+    margin: 0 auto;
+}
+
+/*-----------------------------Aside Right----------------------------*/
+#asideRight{
+    display:flex;
+    flex-flow: row wrap;
+    width:20%;
+    height: 70%;
+    margin: 0 0 5px 0;
+    order:5;
+    /*border: 3px solid chocolate;*/
+    /*background-color: bisque;*/
+}
+
+.asideRightSectionOne{
+    width: 90%;
+    margin:0 auto;
+}
+.asideRightSectionOne>img{
+    width:100%;
+    box-shadow: -5px 5px  grey;
+}
+.asideRightSectionOne>h2{
+    margin-top: 8px;
+}
+
+                                .asideRightSectionTwo{
+                                    width: 90%;
+                                    margin:0 auto;
+                                }
+                                .asideRightSectionTwo>img{
+                                    width:100%;
+                                    box-shadow: -5px 5px  grey;
+                                }
+                                .asideRightSectionTwo>h2{
+                                    margin-top: 8px;
+                                }
+.asideRightSectionThree{
+    width: 90%;
+    margin:0 auto;
+}
+.asideRightSectionThree>img{
+    width:100%;
+    box-shadow: -5px 5px  grey;
+}
+.asideRightSectionThree>h2{
+    margin-top: 8px;
+}
+                                .asideRightSectionFour{
+                                    width: 90%;
+                                    margin:0 auto;
+                                }
+                                .asideRightSectionFour>img{
+                                    width:100%;
+                                    box-shadow: -5px 5px  grey;
+                                }
+                                .asideRightSectionFour>h2{
+                                    margin-top: 8px;
+                                }
+/*-----------------------------Aside Left----------------------------*/
+#asideLeft{
+    display: flex;
+    flex-flow: row wrap;
+    width:20%;
+    /*height: 70%;*/
+    margin: 0 0 5px 0;
+    order:3;
+    /*border: 3px solid chocolate;*/
+    /*background-color: bisque;*/
+}
+
+.asideLeftNav{
+    width: 100%;
+    order:1;
+    text-align: right;
+    padding-right: 5px;
+}
+.asideLeftNav>ul{
+    width: 100%;
+    list-style-type: square;
+    line-height: 50px;
+    direction: rtl;
+}
+
+.asideLeftSecOne{
+    width: 100%;
+    order: 2;
+    margin-top: 120px;
+}
+.asideLeftSecOne>img{
+    width: 100%;
+    box-shadow: -5px 5px  grey;
+}
+.asideLeftSecOne>h3{
+    margin-top: 20px;
+}
+
+                        .asideLeftSecTwo{
+                            width: 100%;
+                            order:3;
+                        }
+                        .asideLeftSecTwo>img{
+                            width: 100%;
+                            box-shadow: -5px 5px  grey;
+                        }
+                        .asideLeftSecTwo>h3{
+                            margin-top: 20px;
+                        }
+/*----------------------------------Footer----------------------------*/
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    width:100%;
+    height: 15%;
+    order:6;
+    border: 3px solid chocolate;
+    background-color: darkgrey;
+}
+
+.footerContentRow{
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+}
+
+.footerList{
+    width: 20%;
+    background-color: red;
+}
+
+                            .footerPost{
+                                display: flex;
+                                flex-flow: row;
+                                width: 40%;
+                            }
+                            .footerPostPic{
+                                width: 45%;
+                            }
+                            .footerPostPic>img{
+                                width:85%;
+                            }
+                            .footerPostText{
+                                width: 40%;
+                            }
+
+.footerParag{
+    width: 20%;
+    background-color: blueviolet;
+}
+
+.copyRightRow{
+    width: 100%;
+    /*background-color: steelblue;*/
+    text-align: center;
+    margin-bottom: 10px;
+}
+.copyRightText{
+    display: inline-block;
+    /*background-color: blueviolet;*/
+
+}
+.copyRightText>p{
+    /*direction: rtl;*/
+    font-weight: bolder;
+}
+.copyRightPic{
+    display: inline-block;
+    width: 3%;
+    /*background-color: red;*/
+}
+.copyRightPic>img{
+    width: 100%;
+}
